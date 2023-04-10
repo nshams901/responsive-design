@@ -6,6 +6,7 @@ import Heading from "../Heading/Heading";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 
 const Signup = () => {
+  
   return (
     <>
       <div className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-1">
@@ -56,7 +57,9 @@ const Signup = () => {
         <Button2 title="Sign Up" bgColor="#7991BD" />
         <p className="text-[10px] font-bold text-gray-500 mb-2">
           Already have and account ?
-          <span className="text-[#7991BD]">Sign In</span>
+          <Link to="/login" className="text-[#7991BD]">
+           Sign In
+        </Link>
         </p>
       </div>
     </>

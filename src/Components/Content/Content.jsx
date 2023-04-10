@@ -18,9 +18,7 @@ const Content = () => {
             <Route path="/newpassword" element={<NewPassword /> }/>
             <Route path="/signup" element={ <Signup />  }/>
             <Route path="/entercode" element={  <EnterCode title="Enter Code" /> }/>
-
             <Route path="/verification" element={<EnterCode  title="Verfication starts now" />  }/>
-
           </Routes>
        
         </div>
