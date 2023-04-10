@@ -3,26 +3,34 @@ import Login from "./Login/Login";
 import EnterCode from "./EnterCode/EnterCode";
 import NewPassword from "./NewPassword/NewPassword";
 import Signup from "./Signup/Signup";
-import {Routes,Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 const Content = () => {
   return (
-    <div className="w-full h-full flex">
-      <div className="w-[50%] flex items-center">
-        <img src="./images/mobileImage.jpg" className="w-full h-[80%]" alt="" srcset="" />
+    <div className="w-full h-full flex flex-col md:flex-row">
+      <div className="md:w-[50%] flex items-center">
+        <img
+          src="./images/mobileImage.jpg"
+          className="w-full h-[80%] md:h-auto"
+          alt=""
+          srcset=""
+        />
       </div>
-      <div className="w-[50%] flex justify-center items-center">
-        <div className="bg-white w-[45%] h-[80%] rounded-[20px]">
+      <div className="md:w-[50%] flex justify-center items-center ">
+        <div className="bg-white w-full md:w-[45%] h-full md:h-[80%] rounded-[20px] ">
           <Routes>
-            <Route path="/login" element={<Login /> }/>
-            <Route path="/newpassword" element={<NewPassword /> }/>
-            <Route path="/signup" element={ <Signup />  }/>
-            <Route path="/entercode" element={  <EnterCode title="Enter Code" /> }/>
-
-            <Route path="/verification" element={<EnterCode  title="Verfication starts now" />  }/>
-
+            <Route path="/login" element={<Login />} />
+            <Route path="/newpassword" element={<NewPassword />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route
+              path="/entercode"
+              element={<EnterCode title="Enter Code" />}
+            />
+            <Route
+              path="/verification"
+              element={<EnterCode title="Verification starts now" />}
+            />
           </Routes>
-       
         </div>
       </div>
     </div>

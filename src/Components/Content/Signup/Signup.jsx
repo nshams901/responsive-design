@@ -4,8 +4,8 @@ import PasswordInput from "../InputBox/PasswordInput";
 import Button2 from "../Button/Button2";
 import Heading from "../Heading/Heading";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
-
 const Signup = () => {
+
   return (
     <>
       <div className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-1">

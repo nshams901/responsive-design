@@ -4,7 +4,6 @@ import Input from "../InputBox/Input";
 import Heading from "../Heading/Heading";
 import PasswordInput from "../InputBox/PasswordInput";
 import Button2 from "../Button/Button2";
-
 const Login = () => {
   return (
     <>

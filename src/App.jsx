@@ -9,7 +9,7 @@ const App = () => {
       <div className="w-full flex justify-end ">
         <Topbar />
       </div>
-      <div className="w-full h-[455px]">
+      <div className=" w-full h-[455px]">
         <Content />
       </div>
       <div className="w-full">
