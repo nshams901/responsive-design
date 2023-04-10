@@ -3,8 +3,10 @@ import Input from "../InputBox/Input";
 import Heading from "../Heading/Heading";
 import PasswordInput from "../InputBox/PasswordInput";
 import Button2 from "../Button/Button2";
+import {NavLink} from "react-router-dom"
 
 const Login = () => {
+
   return (
     <>
       <div className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-2">

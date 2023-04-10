@@ -22,10 +22,7 @@ const Content = () => {
             <Route path="/verification" element={<EnterCode  title="Verfication starts now" />  }/>
 
           </Routes>
-        
-         {/*  */}
-         {/* */}
-         {/**/}
+       
         </div>
       </div>
     </div>
