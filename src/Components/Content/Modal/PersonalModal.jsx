@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { AiOutlineCaretUp, AiOutlineCaretDown } from "react-icons/ai";
 
 const PersonalModal = () => {
-  // const [Pop, setPop] = useState(false);
-  // const [isOpen, setIsOpen] = useState(false);
-  // const CloseModel = () => {
-  //   return setPop(false);
-  // };
+  const [Pop, setPop] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const CloseModel = () => {
+    return setPop(false);
+  };
 
   // const NewModel = () => {
     return (
