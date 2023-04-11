@@ -8,7 +8,7 @@ const Input = ({title ,errorMessage,inputValue,onHandleChange,name,touched,onBlu
         name={name}
         placeholder={title}
         value={inputValue}
-        className="outline-none border-[1px] border-gray-600 rounded-[5px] w-[80%] text-xs py-1.5 pl-2 font-semibold"
+        className="outline-none border-[1px] border-gray-600 rounded-[5px] w-full text-xs py-1.5 pl-2 font-semibold"
         onChange={onHandleChange}
         onBlur={onBlur}
       />

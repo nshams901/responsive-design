@@ -21,7 +21,7 @@ const PasswordInput = ({
 
   return (
     <div className="w-full flex flex-col items-center justify-center ">
-      <div className="flex flex w-[80%] items-center border-[1px] border-gray-600 rounded-[5px] pl-1">
+      <div className="flex flex w-full items-center border-[1px] border-gray-600 rounded-[5px] pl-1">
         <input
           type={passwordType}
           placeholder={title}

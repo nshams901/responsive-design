@@ -53,7 +53,7 @@ const Signup = () => {
     <>
       <div className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-1 p-5">
         <Heading title="Get Started" />
-        <div>
+        <div className="flex w-full justify-between mb-2">
           <span><input type="radio" name="" id="" /> Personal</span>
           <span><input type="radio" name="" id="" /> Orgainization</span>
         </div>
@@ -72,7 +72,7 @@ const Signup = () => {
           <select
             name=""
             id=""
-            className="border-[1px] rounded-[5px] border-gray-600 text-xs font-semibold py-1.5"
+            className="border-[1px] rounded-[5px] border-gray-600 text-xs font-semibold py-1.5 w-full"
           >
             <option value="">USA +1</option>
             <option value="">IN +91</option>
@@ -92,7 +92,7 @@ const Signup = () => {
           </p>
         ) : null}
 
-        <p className="text-xs font-bold text-[#7B8FA1] flex items-center self-start ml-8 mt-2 mb-1">
+        <p className="text-xs font-bold text-[#7B8FA1] flex items-center self-start mt-2 mb-1">
           Password Help
           <span
             className="ml-1"
@@ -111,7 +111,7 @@ const Signup = () => {
           onBlur={formik.handleBlur}
         />
         <div className="w-full flex flex-col mb-2">
-          <div className="flex w-full gap-1 pl-8 items-center">
+          <div className="flex w-full gap-1 items-center">
            
             <input type="checkbox" />
             <p className="text-[10px] font-semibold">

@@ -4,10 +4,15 @@ import Input from "../InputBox/Input";
 import Heading from "../Heading/Heading";
 import Button2 from "../Button/Button2";
 
-const EnterCode = ({title}) => {
+const EnterCode = ({ title }) => {
   const [timer, setTimer] = useState(false);
-  const timerFunction =()=>{
-    setTimer(!timer);
+  const timerFunction = () => {
+    if (timer === false) {
+      setTimer(true);
+      setTimeout(() => {
+        setTimer(false);
+      }, 4000);
+    } 
   };
   return (
     <>
@@ -21,20 +26,12 @@ const EnterCode = ({title}) => {
           errorMessage="You've reached maximum attempts. Please try again from login"
         />
         <Button2 title="Confirm" />
-        {timer ?
-          <Button1
-            title="05:00"
-            onClick={timerFunction}
-          />
-        : 
-          <Button1
-            title="Send Code Again"
-            onClick={timerFunction}
-          />
-        }
-        <Button1
-          title="Cancel"
-        />
+        {timer ? (
+        <div disabled="disabled" className="bg-gray-600 text-white w-[70%] rounded-3xl py-1.5 text-center font-bold text-xs">05:00</div>
+        ) : (
+          <Button1 title="Send Code Again" onClick={timerFunction} />
+        )}
+        <Button1 title="Cancel" path="/" />
       </div>
     </>
   );
