@@ -124,7 +124,7 @@ const Signup = () => {
         <Button2 title="Sign Up" bgColor="#7991BD" />
         <p className="text-[10px] font-bold text-gray-500 mb-2">
           Already have and account ?
-          <Link to="/login" className="text-[#7991BD]">
+          <Link to="/" className="text-[#7991BD]">
             Sign In
           </Link>
         </p>

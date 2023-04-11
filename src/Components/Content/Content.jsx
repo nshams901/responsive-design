@@ -19,7 +19,7 @@ const Content = () => {
       <div className="md:w-[50%] flex justify-center items-center ">
         <div className="bg-white w-full md:w-[45%] h-full md:h-[80%] rounded-[20px] ">
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/newpassword" element={<NewPassword />} />
             <Route path="/signup" element={<Signup />} />
             <Route

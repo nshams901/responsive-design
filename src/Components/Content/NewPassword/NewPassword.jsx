@@ -5,8 +5,8 @@ import Heading from "../Heading/Heading";
 import PasswordInput from "../InputBox/PasswordInput";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import Button2 from "../Button/Button2";
-import { Tooltip } from "@material-tailwind/react";
-//
+
+
 const NewPassword = () => {
   return (
     <>
