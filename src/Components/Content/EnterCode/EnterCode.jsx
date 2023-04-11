@@ -21,10 +21,12 @@ const EnterCode = ({ title }) => {
         <p className="text-[10px] font-bold text-[#7B8FA1] w-[78%] mb-1">
           We've have sent a code to your email address
         </p>
-        <Input
+       <div className="w-[85%]">
+       <Input
           title="Enter Code"
           errorMessage="You've reached maximum attempts. Please try again from login"
         />
+       </div>
         <Button2 title="Confirm" />
         {timer ? (
         <div disabled="disabled" className="bg-gray-600 text-white w-[70%] rounded-3xl py-1.5 text-center font-bold text-xs">05:00</div>
