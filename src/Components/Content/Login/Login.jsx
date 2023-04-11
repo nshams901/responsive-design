@@ -18,16 +18,19 @@ const Login = () => {
       email: Yup.string()
         .email('"Email address incorrect. Please Try again"')
         .required("Required"),
-        password:Yup.string()
-        .min(8,"Password should be minimum of 8 length characters with one numerical value")
-        .matches(passwordRules,{
+      password: Yup.string()
+        .min(
+          8,
+          "Password should be minimum of 8 length characters with one numerical value"
+        )
+        .matches(passwordRules, {
           message:
             "min 5 characters, 1 upper case letter, 1 lower case letter, 1 numeric digit",
         })
         .required("Required"),
     }),
     onSubmit: (e) => {
-      e.preventDefault()
+      e.preventDefault();
       const dataObj = {
         email: formik.values.email,
         password: formik.values.password,
@@ -39,7 +42,7 @@ const Login = () => {
   return (
     <>
       <form
-        className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-2"
+        className="lg:w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-2 p-4"
         onSubmit={formik.handleSubmit}
       >
         <Heading title="Get Started" />
@@ -51,6 +54,7 @@ const Login = () => {
           touched={formik.touched.email}
           onHandleChange={formik.handleChange}
           onBlur={formik.handleBlur}
+          className="w-full"
         />
         <PasswordInput
           title="Password"
@@ -60,16 +64,17 @@ const Login = () => {
           errorMessage={formik.errors.password}
           touched={formik.touched.password}
           onBlur={formik.handleBlur}
+          className="w-full"
         />
         <div className="w-full">
           <Link to="/newpassword" className="ml-8 text-xs font-bold mb-2">
             Forget Password ?
           </Link>
         </div>
-        <Button2 title="Sign In" />
-        <p className="text-xs font-bold text-[#7B8FA1]">
-          Don't have account ?
-          <Link to="/signup" className="text-[#7991BD]">
+        <Button2 title="Sign In" className="w-full" />
+        <p className="text-xs font-bold text-[#7B8FA1] mt-4">
+          Don't have an account?
+          <Link to="/signup" className="text-[#7991BD] ml-2">
             Sign Up
           </Link>
         </p>

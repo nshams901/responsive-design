@@ -10,14 +10,14 @@ const Content = () => {
     <div className="w-full h-full flex flex-col md:flex-row">
       <div className="md:w-[50%] flex items-center">
         <img
-          src="./images/mobileImage.jpg"
+          src="./images/Human.png"
           className="w-full h-[80%]"
           alt=""
           srcset=""
         />
       </div>
-      <div className="md:w-[50%] flex justify-center items-center ">
-        <div className="bg-white w-full md:w-[45%] h-full md:h-[80%] rounded-[20px] ">
+      <div className="xs:w-[100%] md:w-[50%] flex justify-center items-center">
+        <div className="bg-white xs:w-[78%] md:w-[70%] lg:w-[45%] h-full md:h-[80%] rounded-[20px] border-3">
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/newpassword" element={<NewPassword />} />
