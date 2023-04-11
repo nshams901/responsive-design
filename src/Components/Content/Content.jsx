@@ -7,17 +7,18 @@ import { Routes, Route } from "react-router-dom";
 
 const Content = () => {
   return (
+    <>
     <div className="w-full h-full flex flex-col md:flex-row">
-      <div className="md:w-[50%] flex items-center">
+      <div className="md:w-[50%] flex items-center mb-5">
         <img
           src="./images/Human.png"
-          className="w-full h-[80%]"
+          className="w-full p-[10%]"
           alt=""
           srcset=""
         />
       </div>
       <div className="xs:w-[100%] md:w-[50%] flex justify-center items-center">
-        <div className="bg-white xs:w-[78%] md:w-[70%] lg:w-[45%] h-full md:h-[80%] rounded-[20px] border-3">
+        <div className="bg-white xs:w-[78%] md:w-[70%] lg:w-[45%] h-full md:h-[80%] rounded-[20px] border-3 w-[80%]">
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/newpassword" element={<NewPassword />} />
@@ -34,6 +35,14 @@ const Content = () => {
         </div>
       </div>
     </div>
+
+    
+</>
+
+
+// dddddddddddddddd
+
+
   );
 };
 
