@@ -21,7 +21,6 @@ const App = () => {
         <div className="w-full h-[20vh]">
           <Footer />
         </div>
-        
       {/* </div> */}
     </>
   );
