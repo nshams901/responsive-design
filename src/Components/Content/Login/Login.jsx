@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"; // import the Link component
 import Input from "../InputBox/Input";
 import Heading from "../Heading/Heading";
 import PasswordInput from "../InputBox/PasswordInput";
-import { useFormik } from "formik";
 import Button2 from "../Button/Button2";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const Login = () => {

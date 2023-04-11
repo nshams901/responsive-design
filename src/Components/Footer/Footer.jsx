@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center mt-40">
+    <div className="flex flex-col items-center mt-6">
       <div className="flex gap-8 mt-2 justify-center items-center">
         <div className="font-semibold text-xs ">
           <span>&copy;</span> 2022 Uynite.com
@@ -13,7 +13,7 @@ const Footer = () => {
           <option value="english">French</option>
         </select>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-5 md:gap-2 md:flex-row-reverse md:mt-3">
+      <div className="flex flex-wrap justify-center items-center gap-5">
       <span className="font-semibold text-sm">About us</span>
       <div className="bg-black w-[2px] h-[14px] hidden md:flex items-center justify-center"></div>
       <span className="font-semibold text-sm">Privacy & Cookies</span>

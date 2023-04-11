@@ -14,12 +14,12 @@ const NewPassword = () => {
         <Heading title="Create New Password" />
         <p className="text-xs font-bold text-[#7B8FA1] flex items-center self-start ml-7">
           Password Help
-          <Tooltip
-            content="Password should be minimum of 8 length characters with one numerical value"
-            placement="right"
+          <span
+          className="ml-1 mt-0.5"
+            title="Password should be minimum of 8 length characters with one numerical value"
           >
             <BsFillQuestionCircleFill />
-          </Tooltip>
+          </span>
         </p>
         <PasswordInput title="Password" errorMessage="" />
         <PasswordInput

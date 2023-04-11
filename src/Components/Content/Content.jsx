@@ -11,7 +11,7 @@ const Content = () => {
       <div className="md:w-[50%] flex items-center">
         <img
           src="./images/mobileImage.jpg"
-          className="w-full h-[80%] md:h-auto"
+          className="w-full h-[80%]"
           alt=""
           srcset=""
         />
