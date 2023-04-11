@@ -67,7 +67,7 @@ const Login = () => {
           className="w-full"
         />
         <div className="w-full">
-          <Link to="/newpassword" className="ml-8 text-xs font-bold mb-2">
+          <Link to="/newpassword" className="text-xs font-bold mb-2">
             Forget Password ?
           </Link>
         </div>

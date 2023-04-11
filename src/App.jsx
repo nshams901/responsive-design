@@ -9,7 +9,7 @@ const App = () => {
       <div className="w-full flex justify-end mb-5">
         <Topbar />
       </div>
-      <div className=" w-full max-h-full sm:m-0">
+      <div className=" w-full sm:m-0">
         <Content />
       </div>
       <div className="w-full h-[20vh]">

@@ -17,8 +17,8 @@ const Content = () => {
           srcset=""
         />
       </div>
-      <div className="xs:w-[100%] md:w-[50%] sm:h-full flex justify-center items-center">
-        <div className="bg-white xs:w-[78%] md:w-[70%] lg:w-[45%] h-full md:h-[80%] rounded-[20px] border-3 w-[80%]">
+      <div className="xs:w-[100%] md:w-[50%] flex justify-center items-center">
+        <div className="bg-white xs:w-[78%] md:w-[70%] lg:w-[45%] h-[80%] rounded-[20px] border-3 w-[80%]">
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/newpassword" element={<NewPassword />} />
