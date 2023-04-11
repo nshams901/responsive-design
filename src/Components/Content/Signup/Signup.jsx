@@ -53,6 +53,10 @@ const Signup = () => {
     <>
       <div className="w-full h-full rounded-[20px] flex flex-col justify-center items-center gap-1">
         <Heading title="Get Started" />
+        <div>
+          <span><input type="radio" name="" id="" /> Personal</span>
+          <span><input type="radio" name="" id="" /> Orgainization</span>
+        </div>
         <Input
           title="Email"
           name="email"
